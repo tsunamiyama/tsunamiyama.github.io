@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fun With Navigation Bars</title>
+        <script type="text/javascript" src="netflixBar.js"></script>
+        <link rel="stylesheet" href="googleBarStyle.css">
+        <link rel="stylesheet" href="youtubeBarStyle.css">
+        <link rel="stylesheet" href="netflixBarStyle.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    </head>
+    <body>
+        <div id="googleBar">
+            <div class="sideButtons">
+                <div class="leftButtons">
+                    <p>About</p>
+                </div>
+                <div class="leftButtons">
+                    <p>Store</p>  
+                </div>
+            </div>
+            <div class="sideButtons">
+                <div class="rightButtons rightButtonsLink">
+                    <p>Gmail</p>
+                </div>
+                <div class="rightButtons rightButtonsLink">
+                    <p>Images</p>
+                </div>
+                <div class="rightButtons">
+                    <span class="material-icons-outlined" id="apps">
+                        apps
+                    </span>
+                </div>
+                <div class="rightButtons">
+                    <img id="profilePic" src="https://lh3.googleusercontent.com/ogw/ADea4I7x1knDMzwgKr4dDjC47L7BZnXorQN1KatHZDoK=s32-c-mo">
+                </div>
+            </div>
+        </div>
+
+        <div id="youtubeBar">
+            <div class="yt_navGroup">
+                <div id="yt_menu">
+                    <span class="material-icons-outlined" id="yt_menuIcon">
+                        menu
+                    </span>
+                </div>
+                <div>
+                    <img id="yt_logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/2560px-YouTube_Logo_2017.svg.png" alt="Youtube Home">
+                </div>
+            </div>
+            <div class="yt_navGroup">
+                <div class="yt_centerButtons">
+                    <div class="yt_searchbarDiv">
+                        <input type="text" id="yt_searchbar" placeholder="Search">
+                    </div>
+                    <div class="yt_containsTooltip">
+                        <button id="yt_searchButton">
+                            <span class="material-icons" id="yt_searchIcon">
+                                search
+                            </span>
+                        </button>
+                        <span class="yt_tooltip">
+                            Search
+                        </span>
+                    </div>
+                    <div id="yt_micBackground" class="yt_containsTooltip">
+                        <span class="material-icons" id="yt_mic">
+                            mic
+                        </span>
+                        <span class="yt_tooltip">
+                            Search with your voice
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="yt_navGroup">
+                <div class="yt_rightNavButtons">
+                    <div class="yt_containsTooltip">
+                        <span class="material-icons" id="yt_createIcon">
+                            video_call
+                        </span>
+                        <span class="yt_tooltip">
+                            Create
+                        </span>
+                    </div>
+                </div>
+                <div class="yt_rightNavButtons">
+                    <div class="yt_containsTooltip">
+                        <span class="material-icons-outlined" id="yt_appsIcon">
+                            apps
+                        </span>
+                        <span class="yt_tooltip">
+                            Youtube apps
+                        </span>
+                    </div>
+                </div>
+                <div class="yt_rightNavButtons">
+                    <div class="yt_containsTooltip">
+                        <span class="material-icons" id="yt_notIcon">
+                            notifications
+                        </span>
+                        <span class="yt_tooltip">
+                            Notifications
+                        </span>
+                    </div>
+                </div>
+                <div class="yt_rightNavButtons">
+                    <img id="yt_profilePic" src="https://lh3.googleusercontent.com/ogw/ADea4I7x1knDMzwgKr4dDjC47L7BZnXorQN1KatHZDoK=s32-c-mo">
+                </div>
+            </div>
+        </div>
+
+        <div id="netflixBar">
+            <div class="netflixNavGroup">
+                <img id="netflix_logo" src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" alt="Netflix Home">
+                <div class="netflix_navButtons">
+                    <p class="netflix_button netflix_buttonSelected unselectable" onclick="menuButtonOnClick(0)">Home</p>
+                    <p class="netflix_button unselectable" onclick="menuButtonOnClick(1)">Watch Again</p>
+                    <p class="netflix_button unselectable" onclick="menuButtonOnClick(2)">TV Shows</p>
+                    <p class="netflix_button unselectable" onclick="menuButtonOnClick(3)">Movies</p>
+                    <p class="netflix_button unselectable" onclick="menuButtonOnClick(4)">New & Popular</p>
+                    <p class="netflix_button unselectable" onclick="menuButtonOnClick(5)">My List</p>
+                </div>
+            </div>
+            <div class="netflixNavGroup">
+                <div class="netflix_navButtons">
+                    <div id="netflix_searchMainCon" class="netflix_button">
+                        <form class="netflix_searchContainer" autocomplete="off">
+                            <span id="netflix_search_icon" class="material-icons-outlined unselectable">
+                                search
+                            </span>
+                            <input class="netflix_search_area" placeholder="Titles, people, genres" type="search" value="" name="netflix_search_input" id="netflix_search_input">
+                            <button type="reset" value="reset" id="netflix_clear_button">
+                                <span id="netflix_search_clearIcon"class="material-icons-outlined">
+                                    clear
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                    <p class="netflix_nonbutton unselectable">KIDS</p>
+                    <p class="netflix_nonbutton unselectable">DVD</p>
+                    <div class="netflix_hasDropMenu">
+                        <span id="netflix_noti" class="material-icons netflix_button unselectable">
+                            notifications
+                        </span>
+                        <div class="netflix_dropMenu">
+                            <div class="netflix_showCard">
+                            </div>
+                            <div class="netflix_showCard">
+                            </div>
+                            <div class="netflix_showCard">
+                            </div>
+                            <div class="netflix_showCard">
+                            </div>
+                        </div>
+                    </div>
+                    <img id="netflix_profileIcon"src="https://occ-0-3997-37.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABWEE_3qAhYLrZINhU6fkrvOi3KTn4zh43C5sISOVwNisgX-mRxJJIVpZgAoKVOjAIH9mp6IiC9NQIC1h1D484ZA.png?r=f80"
+                        alt="Profile" class="unselectable">
+                    <span id="netflix_dropDown" class="material-icons-outlined netflix_button unselectable">
+                        arrow_drop_down
+                    </span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

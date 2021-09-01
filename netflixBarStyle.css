@@ -1,0 +1,170 @@
+.netflixNavGroup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.netflix_navButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.netflix_nonbutton{
+    color: white;
+    margin: 0px 30px 0px 0px;
+}
+.netflix_nonbutton:hover{
+    cursor: pointer;
+}
+.netflix_button{
+    color: #e5e5e5;
+    margin: 0px 30px 0px 0px;
+    transition-property: color;
+    transition-duration: 0.4s;
+}
+.netflix_button:hover{
+    color: rgb(182, 182, 182);
+    cursor: pointer;    
+}
+.netflix_buttonSelected{
+    color: white;
+    font-weight: bold;
+    margin: 0px 30px 0px 0px;
+    transition-property: color;
+    transition-duration: 0.4s;
+}
+.netflix_buttonSelected:hover{
+    color: white;
+    cursor: pointer;
+}
+.netflix_search_area{
+    height: 100%;
+    max-width: 100%;
+    background-color: black;
+    border: none;
+    outline: none;
+}
+.netflix_searchContainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.netflix_hasDropMenu{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+}
+.netflix_dropMenu{
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+}
+.netflix_hasDropMenu .netflix_dropMenu{
+    background-color: hsla(0, 100%, 0%, 75%);
+    width: fit-content;
+    height: fit-content;
+    top: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.netflix_showCard{
+    height: 100px;
+    width: 100px;
+}
+#netflixBar{
+    display: flex;
+    position: relative;
+    height: 80px;
+    min-width: 100%;
+    top: 0px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    box-shadow: 5px 5px 15px gray;
+}
+#netflix_logo{
+    width: 175px;
+    margin: 0px 55px 0px 70px;
+}
+#netflix_search_icon{
+    font-size: 35px;
+    color: white;
+    margin: 0px 5px 0px 5px;
+}
+#netflix_noti{
+    font-size: 35px;
+    color: white;
+}
+#netflix_profileIcon{
+    width: 40px;
+    margin: 0px 5px 0px 0px;
+    border-radius: 6px;
+}
+#netflix_dropDown{
+    color: white;
+    font-size: 30px;
+    margin-right: 60px;
+}
+#netflix_searchMainCon{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: fit-content;
+    height: 40px;
+    border-color: transparent;
+    overflow: hidden;
+    transition: width .3s, border-color .15s;
+}
+#netflix_search_input{
+    width: 0px;
+    height: 100%;
+    font-size: 20px;
+    transition: width;
+    transition-duration: 0.3s;
+}
+#netflix_search_input::placeholder{
+    color:rgb(182, 182, 182);
+}
+#netflix_search_input, select, textarea{
+    color: white;
+}
+#netflix_clear_button{
+    background-color: transparent;
+    visibility: hidden;
+    border: none;
+    outline: none;
+}
+#netflix_clear_button:hover{
+    cursor: pointer;
+}
+#netflix_search_clearIcon{
+    color: white;
+    font-size: 0px;
+}
+
+
+
+
+
+*.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+ 
+    /*
+      Introduced in IE 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+    */
+    -ms-user-select: none;
+    user-select: none;
+ }
+/*Clears X from ie*/
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
