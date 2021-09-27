@@ -1,168 +1,199 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Fun With Navigation Bars</title>
-        <script type="text/javascript" src="netflixBar.js"></script>
-        <link rel="stylesheet" href="googleBarStyle.css">
-        <link rel="stylesheet" href="youtubeBarStyle.css">
-        <link rel="stylesheet" href="netflixBarStyle.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet">
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    </head>
-    <body>
-        <div id="googleBar">
-            <div class="sideButtons">
-                <div class="leftButtons">
-                    <p>About</p>
-                </div>
-                <div class="leftButtons">
-                    <p>Store</p>  
-                </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kris Tsuchiyama</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="logo">
+            <p>Kristopher Tsuchiyama</p>
+        </div>
+        <ul class="nav-buttons">
+            <li>projects</li>
+            <li>skills</li>
+            <li>contact</li>
+        </div>
+        <div class="nav-social">
+            <img src="images/Path 44.svg" alt="">
+            <img src="images/LI-In-Bug.svg" alt=""> 
+        </div>
+    </div>
+    <hr>
+    <div class="hero">
+        <p id="hero-headline">Hi, I'm Kris</p>
+        <div id="hero-second-headline">
+            <p>I create</p>
+            <p id="hero-beaut">beautiful</p>
+            <p>software experiences</p>
+        </div>
+    </div>
+    <div class="hero-art">
+        <!-- <img src="images/Group 3.svg" id="hero-art-piece"> -->
+           <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1979.899px" height="414.257px" viewBox="0 0 1979.899 414.257" id="hero-art-piece">
+                <g transform="translate(64.347 -756.96)">
+                <rect width="129" height="129" transform="translate(91.217 988.783) rotate(45)" fill="#fff"/>
+                <rect width="129" height="129" transform="translate(638.517 806.35) rotate(45)" fill="#fff"/>
+                <rect width="129" height="129" transform="translate(273.65 806.35) rotate(45)" fill="#fff"/>
+                <rect width="129" height="129" transform="translate(547.301 897.566) rotate(45)" fill="#fff"/>
+                <rect width="129" height="129" transform="translate(1368.252 806.35) rotate(45)" fill="#fff"/>
+                <rect width="129" height="129" transform="translate(820.951 988.783) rotate(45)" fill="#fff"/>
+                <rect width="129" height="129" transform="translate(1094.601 897.566) rotate(45)" fill="#fff"/>
+                <rect width="129" height="129" transform="translate(1550.685 988.783) rotate(45)" fill="#fff"/>
+                <rect width="129" height="129" transform="translate(1459.469 897.566) rotate(45)" fill="#fff"/>
+                <rect width="129" height="129" transform="translate(1824.336 897.566) rotate(45)" fill="#fff"/>
+                <g transform="translate(0 924.437) rotate(45)" fill="#656565" stroke="#707070" stroke-width="1">
+                    <rect width="91" height="91" stroke="none"/><rect x="0.5" y="0.5" width="90" height="90" fill="none"/>
+                </g><g transform="translate(209.304 951.307) rotate(45)" fill="#656565" stroke="#707070" stroke-width="1">
+                    <rect width="91" height="91" stroke="none"/><rect x="0.5" y="0.5" width="90" height="90" fill="none"/>
+                </g><g transform="translate(364.867 806.35) rotate(45)" fill="#656565" stroke="#707070" stroke-width="1">
+                    <rect width="91" height="91" stroke="none"/><rect x="0.5" y="0.5" width="90" height="90" fill="none"/></g>
+                    <g transform="translate(611.647 951.307) rotate(45)" fill="#656565" stroke="#707070" stroke-width="1">
+                        <rect width="91" height="91" stroke="none"/><rect x="0.5" y="0.5" width="90" height="90" fill="none"/>
+                    </g><g transform="translate(1797.466 951.307) rotate(45)" fill="#656565" stroke="#707070" stroke-width="1">
+                        <rect width="91" height="91" stroke="none"/><rect x="0.5" y="0.5" width="90" height="90" fill="none"/>
+                    </g><g transform="translate(1550.685 907.307) rotate(45)" fill="#656565" stroke="#707070" stroke-width="1">
+                        <rect width="91" height="91" stroke="none"/><rect x="0.5" y="0.5" width="90" height="90" fill="none"/>
+                    </g><g transform="translate(1187.347 778.613) rotate(45)" fill="#656565" stroke="#707070" stroke-width="1">
+                    <rect width="91" height="91" stroke="none"/><rect x="0.5" y="0.5" width="90" height="90" fill="none"/></g>
+                    <g transform="translate(1303.905 1015.653) rotate(45)" fill="#656565" stroke="#707070" stroke-width="1">
+                        <rect width="91" height="91" stroke="none"/><rect x="0.5" y="0.5" width="90" height="90" fill="none"/>
+                    </g><g transform="translate(930.347 886.96) rotate(45)" fill="#656565" stroke="#707070" stroke-width="1">
+                        <rect width="91" height="91" stroke="none"/><rect x="0.5" y="0.5" width="90" height="90" fill="none"/>
+                    </g><g transform="translate(819.322 756.96) rotate(45)" fill="#0afff7" stroke="#707070" stroke-width="1">
+                        <rect width="25" height="25" stroke="none"/><rect x="0.5" y="0.5" width="24" height="24" fill="none"/>
+                    </g><g transform="translate(446.891 806.35) rotate(45)" fill="#0afff7" stroke="#707070" stroke-width="1">
+                        <rect width="25" height="25" stroke="none"/><rect x="0.5" y="0.5" width="24" height="24" fill="none"/>
+                    </g><g transform="translate(757.105 953.976) rotate(45)" fill="#0afff7" stroke="#707070" stroke-width="1">
+                        <rect width="25" height="25" stroke="none"/><rect x="0.5" y="0.5" width="24" height="24" fill="none"/>
+                    </g><g transform="translate(1094.601 823.976) rotate(45)" fill="#0afff7" stroke="#707070" stroke-width="1">
+                        <rect width="25" height="25" stroke="none"/><rect x="0.5" y="0.5" width="24" height="24" fill="none"/>
+                    </g><g transform="translate(384.666 1015.653) rotate(45)" fill="#0afff7" stroke="#707070" stroke-width="1">
+                        <rect width="25" height="25" stroke="none"/><rect x="0.5" y="0.5" width="24" height="24" fill="none"/>
+                    </g><g transform="translate(1690.601 924.437) rotate(45)" fill="#0afff7" stroke="#707070" stroke-width="1">
+                        <rect width="25" height="25" stroke="none"/><rect x="0.5" y="0.5" width="24" height="24" fill="none"/>
+                    </g><g transform="translate(1521.49 788.62) rotate(45)" fill="#0afff7" stroke="#707070" stroke-width="1">
+                        <rect width="25" height="25" stroke="none"/><rect x="0.5" y="0.5" width="24" height="24" fill="none"/>
+                    </g></g>
+            </svg> -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="175.291" height="221.291" viewBox="0 0 175.291 221.291">
+                <g id="Group_4" data-name="Group 4" transform="translate(-2158.855 -492.855)">
+                  <line id="Line_3" data-name="Line 3" x2="70" y2="62" transform="translate(2176.5 510.5)" fill="none" stroke-linecap="round" stroke-width="20" style="stroke: rgb(0,0,0);"/>
+                  <line id="Line_4" data-name="Line 4" x1="70" y2="62" transform="translate(2246.5 510.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="20" style="stroke: rgb(0,0,0);"/>
+                </g>
+                <g id="Group_5" data-name="Group 5" transform="translate(-2158.855 -430.855)">
+                  <line id="Line_3-2" data-name="Line 3" x2="70" y2="62" transform="translate(2176.5 510.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="20" style="stroke: rgb(0,0,0);"/>
+                  <line id="Line_4-2" data-name="Line 4" x1="70" y2="62" transform="translate(2246.5 510.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="20" style="stroke: rgb(0,0,0);"/>
+                </g>
+                <g id="Group_6" data-name="Group 6" transform="translate(-2158.855 -368.855)">
+                  <line id="Line_3-3" data-name="Line 3" x2="70" y2="62" transform="translate(2176.5 510.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="20" style="stroke: rgb(0,0,0);"/>
+                  <line id="Line_4-3" data-name="Line 4" x1="70" y2="62" transform="translate(2246.5 510.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="20" style="stroke: rgb(0,0,0);"/>
+                </g>
+            </svg>
+              
+    </div>
+    <div class="featured-project">
+        <p id="featured-project-label">Featured Project</p>
+        <p id="featured-project-title">Pick N' Choose</p>
+        <p>Pick N' Choose is an Android application built using Java. Using the Yelp REST api, Pick N' Choose will decide on a food, drink, or cuisine for the user to eat, as well as display nearby restaurants which serve the selected food. Pick N' Choose also allows for the user to create a custom list of items to choose from instead of the included lists.</p>
+        <img src="images/pncTrio.png" id="pnc-pic" alt="Picture of Pick N' Choose">
+    </div>
+    <div class="projects">
+        <p id="projects-label">Projects</p>
+        <figure class="project-tiles">
+            <p class="project-name">Sudoku Solver</p>
+            <img src="images/sudPic.png" id="sud-pic" alt="Sudoku Solver Picture" class="project-thumbnail">
+            <figcaption>
+                <p class="project-moreinfo">More Info</p>
+                <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum et tellus eu dictum. Suspendisse potenti. Fusce hendrerit ante nec sagittis placerat. Curabitur cursus sem neque, nec viverra odio gravida vel. Nulla orci diam, consectetur sit amet quam consequat, tempus posuere augue. Cras ultrices felis vitae lobortis dictum. Nulla pulvinar.</p>
+                <button class="project-button">See Project</button>
+            </figcaption>
+        </figure>
+        <figure class="project-tiles">
+            <p class="project-name" id="bdg-name">Bomb Defusal Game</p>
+            <img src="images/bombDefusalGame.jpg" id="bdg-pic" alt="Bomb Defusal Picture" class="project-thumbnail">
+            <figcaption>
+                <p class="project-moreinfo">More Info</p>
+                <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum et tellus eu dictum. Suspendisse potenti. Fusce hendrerit ante nec sagittis placerat. Curabitur cursus sem neque, nec viverra odio gravida vel. Nulla orci diam, consectetur sit amet quam consequat, tempus posuere augue. Cras ultrices felis vitae lobortis dictum. Nulla pulvinar.</p>
+                <button class="project-button">See Project</button>
+            </figcaption>
+        </figure>
+        <figure class="project-tiles">
+            <p class="project-name" id="mjc-name">MiniJava Compiler</p>
+            <img src="images/mjv.png" alt="MiniJava Compiler Picture" class="project-thumbnail">
+            <figcaption>
+                <p class="project-moreinfo">More Info</p>
+                <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum et tellus eu dictum. Suspendisse potenti. Fusce hendrerit ante nec sagittis placerat. Curabitur cursus sem neque, nec viverra odio gravida vel. Nulla orci diam, consectetur sit amet quam consequat, tempus posuere augue. Cras ultrices felis vitae lobortis dictum. Nulla pulvinar.</p>
+                <button class="project-button">See Project</button>
+            </figcaption>
+        </figure>
+        <figure class="project-tiles">
+            <p class="project-name" id="wsc-name">Websocket Communication</p>
+            <img src="images/wsc.png" alt="Websocket Communication Picture" class="project-thumbnail">
+            <figcaption>
+                <p class="project-moreinfo">More Info</p>
+                <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum et tellus eu dictum. Suspendisse potenti. Fusce hendrerit ante nec sagittis placerat. Curabitur cursus sem neque, nec viverra odio gravida vel. Nulla orci diam, consectetur sit amet quam consequat, tempus posuere augue. Cras ultrices felis vitae lobortis dictum. Nulla pulvinar.</p>
+                <button class="project-button">See Project</button>
+            </figcaption>
+        </figure>
+    </div>
+    <div class="skills">
+        <p id="skills-label">Skills</p>
+        <div id="skills-container">
+            <div class="skills-bg">
+                <img src="images/Python-logo-notext.svg" class="skills-icon">
+                <p>Python</p>
             </div>
-            <div class="sideButtons">
-                <div class="rightButtons rightButtonsLink">
-                    <p>Gmail</p>
-                </div>
-                <div class="rightButtons rightButtonsLink">
-                    <p>Images</p>
-                </div>
-                <div class="rightButtons">
-                    <span class="material-icons-outlined" id="apps">
-                        apps
-                    </span>
-                </div>
-                <div class="rightButtons">
-                    <img id="profilePic" src="https://lh3.googleusercontent.com/ogw/ADea4I7x1knDMzwgKr4dDjC47L7BZnXorQN1KatHZDoK=s32-c-mo">
-                </div>
+            <div class="skills-bg">
+                <img src="images/java-vertical.svg" class="skills-icon">
+                <p>Java</p>
+            </div>
+            <div class="skills-bg">
+                <img src="images/c++.svg" class="skills-icon">
+                <p>C++</p>
+            </div>
+            <div class="skills-bg">
+                <img src="images/dart.svg" class="skills-icon">
+                <p>Dart</p>
+            </div>
+            <div class="skills-bg">
+                <img src="images/psql.svg" class="skills-icon">
+                <p>PostgreSQL</p>
+            </div>
+            <div class="skills-bg">
+                <img src="images/html-1.svg" class="skills-icon">
+                <p>HTML</p>
+            </div>
+            <div class="skills-bg">
+                <img src="images/CSS3.svg" class="skills-icon">
+                <p>CSS</p>
+            </div>
+            <div class="skills-bg">
+                <img src="images/javascript.svg" class="skills-icon">
+                <p>JavaScript</p>
             </div>
         </div>
-
-        <div id="youtubeBar">
-            <div class="yt_navGroup">
-                <div id="yt_menu">
-                    <span class="material-icons-outlined" id="yt_menuIcon">
-                        menu
-                    </span>
-                </div>
-                <div>
-                    <img id="yt_logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/2560px-YouTube_Logo_2017.svg.png" alt="Youtube Home">
-                </div>
-            </div>
-            <div class="yt_navGroup">
-                <div class="yt_centerButtons">
-                    <div class="yt_searchbarDiv">
-                        <input type="text" id="yt_searchbar" placeholder="Search">
-                    </div>
-                    <div class="yt_containsTooltip">
-                        <button id="yt_searchButton">
-                            <span class="material-icons" id="yt_searchIcon">
-                                search
-                            </span>
-                        </button>
-                        <span class="yt_tooltip">
-                            Search
-                        </span>
-                    </div>
-                    <div id="yt_micBackground" class="yt_containsTooltip">
-                        <span class="material-icons" id="yt_mic">
-                            mic
-                        </span>
-                        <span class="yt_tooltip">
-                            Search with your voice
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="yt_navGroup">
-                <div class="yt_rightNavButtons">
-                    <div class="yt_containsTooltip">
-                        <span class="material-icons" id="yt_createIcon">
-                            video_call
-                        </span>
-                        <span class="yt_tooltip">
-                            Create
-                        </span>
-                    </div>
-                </div>
-                <div class="yt_rightNavButtons">
-                    <div class="yt_containsTooltip">
-                        <span class="material-icons-outlined" id="yt_appsIcon">
-                            apps
-                        </span>
-                        <span class="yt_tooltip">
-                            Youtube apps
-                        </span>
-                    </div>
-                </div>
-                <div class="yt_rightNavButtons">
-                    <div class="yt_containsTooltip">
-                        <span class="material-icons" id="yt_notIcon">
-                            notifications
-                        </span>
-                        <span class="yt_tooltip">
-                            Notifications
-                        </span>
-                    </div>
-                </div>
-                <div class="yt_rightNavButtons">
-                    <img id="yt_profilePic" src="https://lh3.googleusercontent.com/ogw/ADea4I7x1knDMzwgKr4dDjC47L7BZnXorQN1KatHZDoK=s32-c-mo">
-                </div>
-            </div>
-        </div>
-
-        <div id="netflixBar">
-            <div class="netflixNavGroup">
-                <img id="netflix_logo" src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" alt="Netflix Home">
-                <div class="netflix_navButtons">
-                    <p class="netflix_button netflix_buttonSelected unselectable" onclick="menuButtonOnClick(0)">Home</p>
-                    <p class="netflix_button unselectable" onclick="menuButtonOnClick(1)">Watch Again</p>
-                    <p class="netflix_button unselectable" onclick="menuButtonOnClick(2)">TV Shows</p>
-                    <p class="netflix_button unselectable" onclick="menuButtonOnClick(3)">Movies</p>
-                    <p class="netflix_button unselectable" onclick="menuButtonOnClick(4)">New & Popular</p>
-                    <p class="netflix_button unselectable" onclick="menuButtonOnClick(5)">My List</p>
-                </div>
-            </div>
-            <div class="netflixNavGroup">
-                <div class="netflix_navButtons">
-                    <div id="netflix_searchMainCon" class="netflix_button">
-                        <form class="netflix_searchContainer" autocomplete="off">
-                            <span id="netflix_search_icon" class="material-icons-outlined unselectable">
-                                search
-                            </span>
-                            <input class="netflix_search_area" placeholder="Titles, people, genres" type="search" value="" name="netflix_search_input" id="netflix_search_input">
-                            <button type="reset" value="reset" id="netflix_clear_button">
-                                <span id="netflix_search_clearIcon"class="material-icons-outlined">
-                                    clear
-                                </span>
-                            </button>
-                        </form>
-                    </div>
-                    <p class="netflix_nonbutton unselectable">KIDS</p>
-                    <p class="netflix_nonbutton unselectable">DVD</p>
-                    <div class="netflix_hasDropMenu">
-                        <span id="netflix_noti" class="material-icons netflix_button unselectable">
-                            notifications
-                        </span>
-                        <div class="netflix_dropMenu">
-                            <div class="netflix_showCard">
-                            </div>
-                            <div class="netflix_showCard">
-                            </div>
-                            <div class="netflix_showCard">
-                            </div>
-                            <div class="netflix_showCard">
-                            </div>
-                        </div>
-                    </div>
-                    <img id="netflix_profileIcon"src="https://occ-0-3997-37.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABWEE_3qAhYLrZINhU6fkrvOi3KTn4zh43C5sISOVwNisgX-mRxJJIVpZgAoKVOjAIH9mp6IiC9NQIC1h1D484ZA.png?r=f80"
-                        alt="Profile" class="unselectable">
-                    <span id="netflix_dropDown" class="material-icons-outlined netflix_button unselectable">
-                        arrow_drop_down
-                    </span>
-                </div>
-            </div>
-        </div>
-    </body>
+    </div> 
+    <div class="contact-form">
+        <p>Contact Me</p>
+        <form name="Contact" method="POST" data-netlify="true" id="contactMe">
+            <p>
+                <label>Your Name: <input type="text" name="name" placeholder="Name"></label>
+            </p>
+            <p>
+                <label>Your Email: <input type="text" name="email" placeholder="Email"></label>
+            </p>
+            <p>
+                <label>Message: <textarea type="text" name="message" placeholder="Message..."></textarea></label>
+            </p>
+            <p>
+                <button>Send</button>
+            </p>
+        </form>
+    </div>
+</body>
 </html>
